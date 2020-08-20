@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Template from "../../Template";
 
 //import Logo from "../../assets/airbnb-logo.svg";
 //<img src={Logo} alt="Airbnb logo" />
@@ -20,6 +21,7 @@ class SignUp extends Component {
 
   render() {
     return (
+      <Template>
       <Container>
         <Form onSubmit={this.handleSignUp}>
           
@@ -44,6 +46,7 @@ class SignUp extends Component {
           <Link to="/">Fazer login</Link>
         </Form>
       </Container>
+      </Template>
     );
   }
 }
